@@ -80,7 +80,7 @@
 .button-57 {
   position: relative;
   overflow: hidden;
-  border: 1px solid #18181a;
+  border: 1px solid #000000;
   border-radius: 2px;
   margin-top: 3px;
   margin-left: 6px;
@@ -95,7 +95,7 @@
   background: rgb(61, 61, 61);
   user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation;
+  touch-action:manipulation;
   
 }
 
