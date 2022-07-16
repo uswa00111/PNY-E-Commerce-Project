@@ -13,24 +13,109 @@ img{
     color: rgb(110, 110, 110);
 }
 .card-body{
-    /* background-color: rgba(171, 173, 173, 0.986); */
-    background-image: url(../header/2500206.webp);
+    background-color: rgba(66, 66, 66, 0.986) !important;
+    /* background-image: url(../header/2500206.webp); */
 }
 
 #i-stock{
-    color: rgb(10, 10, 10);
+    color: rgb(10, 10, 10) !important;
     font-size: large;
 }
 #o-stock{
-    color: grey;
+    color: grey !important;
     font-size: large;
 }
 
 #check-icon{
-    color: black;
+    color: black !important;
     
 }
 #cross-icon{
-    color: grey;
+    color: grey !important;
     
 }
+
+
+
+
+
+
+
+
+
+
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  :root {
+    --card-height: 300px;
+    /* --card-width: calc(var(--card-height) / 1.5); */
+  }
+  
+  
+
+  .card:hover {
+    color: rgb(0, 0, 0);
+    transition: color 1s;
+  }
+  .card:hover:before, .card:hover:after {
+    animation: none;
+    opacity: 0;
+  }
+  
+  
+  .card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #585858, #3c3c3d 43%, #3a393b);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 2.5s linear infinite;
+  }
+  
+  .card::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(
+      var(--rotate)
+      , #525252, #363638 43%, #333038);
+      opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+  
+  a {
+    color: #18191b;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 2rem;
+  }

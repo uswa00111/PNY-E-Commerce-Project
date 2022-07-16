@@ -12,6 +12,8 @@ import { ViewCartComponent } from './Main Components Portal/cart/view-cart.compo
 import { UserSignInComponent } from './Management Portal/UserManagement/user-sign-in/user-sign-in.component';
 import { UserSignUpComponent } from './Management Portal/UserManagement/user-sign-up/user-sign-up.component';
 import { HomeComponent } from './Main Components Portal/home/home.component';
+import { GallaryComponent } from './gallary/gallary.component';
+import { FaqComponent } from './faq/faq.component';
 
 const routes: Routes = [
   { path:'', component:HomeComponent},
@@ -23,6 +25,9 @@ const routes: Routes = [
   { path:'angular-components', component:AngularConceptsComponent },
   { path:'parent', component:ParentComponent },
   { path:'child', component:ChildComponent },
+  {path:'gallary', component:GallaryComponent},
+  {path:'faq', component:FaqComponent},
+  
 
   {
     path:'admin-portal',component:AdminDefaultComponent,

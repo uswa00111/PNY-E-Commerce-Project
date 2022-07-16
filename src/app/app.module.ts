@@ -23,6 +23,9 @@ import { ParentComponent } from './Main Components Portal/parent/parent.componen
 import { ChildComponent } from './Main Components Portal/child/child.component';
 import { HomeComponent } from './Main Components Portal/home/home.component';
 import { FooterComponent } from './Main Components Portal/footer/footer.component';
+import { FaqComponent } from './faq/faq.component';
+import { GallaryComponent } from './gallary/gallary.component';
+
 
 
 @NgModule({
@@ -39,7 +42,9 @@ import { FooterComponent } from './Main Components Portal/footer/footer.componen
     ParentComponent,
     ChildComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    FaqComponent,
+    GallaryComponent
   ],
   imports: [
     BrowserModule,
