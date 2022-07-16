@@ -16,6 +16,8 @@
     color: rgb(8, 8, 8);
     font-family:Verdana;
     font-size: 17px;
+    margin-left: 9px;
+    
 }
 .navbar-brand img{
     width: 5%;
@@ -36,6 +38,7 @@
     opacity: 90%;
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
+    
 }
 .navbar-new-bottom ul li{
     margin-left: 2%;
@@ -68,32 +71,32 @@
     font-weight: 700;
     font-size: 13px;
     cursor: pointer;
+}
 
 
 
 
 
-
-
-    <!-- HTML !-->
-<button class="button-57" role="button"><span class="text">Button 57</span><span>Alternate text</span></button>
-
-/* CSS */
 .button-57 {
   position: relative;
   overflow: hidden;
   border: 1px solid #18181a;
-  color: #18181a;
+  border-radius: 2px;
+  margin-top: 3px;
+  margin-left: 6px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #0f0f0f;
   display: inline-block;
-  font-size: 15px;
-  line-height: 15px;
-  padding: 18px 18px 17px;
+  font-size: 13px;
+  line-height: 11px;
+  padding: 9px 9px ;
   text-decoration: none;
   cursor: pointer;
-  background: #fff;
+  background: rgb(61, 61, 61);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  
 }
 
 .button-57 span:first-child {
@@ -103,7 +106,7 @@
 }
 
 .button-57 span:last-child {
-  color: white;
+  color: rgb(207, 114, 26);
   display: block;
   position: absolute;
   bottom: 0;
@@ -115,6 +118,7 @@
   transform: translateY(225%) translateX(-50%);
   height: 14px;
   line-height: 13px;
+  border-color: rgb(201, 116, 18);
 }
 
 .button-57:after {
@@ -141,5 +145,3 @@
   opacity: 1;
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
-}
-
