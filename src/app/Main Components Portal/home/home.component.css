@@ -1,0 +1,117 @@
+*/
+.bg-cover {
+    /* background-size: cover !important; */
+}
+
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+#hero1-btn-color{
+    color: rgb(163, 163, 163);
+    
+}
+
+h1{
+    color: rgb(14, 14, 14);
+    font-family: oswald;
+
+}
+body {
+    min-height: 100vh;
+}
+
+
+#py-5{
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .page-holder {
+  min-height: 100vh;
+} */
+
+.bg-cover {
+    background-size: cover !important;
+    background-position: center;
+    min-height: 100vh;
+    /* height: auto; */
+    max-width: 100%;
+    /* background-size: 100% auto !important; */
+    
+  }
+  
+  u{
+    font-size: 18px;
+    /* word-spacing: 2px; */
+    /* letter-spacing: 5px; */
+  }
+  
+  h1{
+    font-family: 'helvetica';
+  }
+  
+  h3{
+    font-size: 26px;
+    letter-spacing: 1px;
+    padding-bottom: 7px;
+    /* font-family: Futara; */
+    
+  }
+  
+  #dark-p{
+    color: black;
+  }
+  
+  #dark-h1{
+    color: black;
+  }
+  
+  #dark-h3{
+    color: black;
+  }
+  
+  #dark-u{
+    color: black;
+  }
