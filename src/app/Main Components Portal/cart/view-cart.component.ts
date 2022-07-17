@@ -21,7 +21,7 @@ export class ViewCartComponent implements OnInit {
   ShowCart: Boolean = false;
   FinalUserCartArray: any = [];
   CartArray: any = [];
-  NewCartArray:any =[];
+  NewCartArray:any =[];  
   SelectedQuantity=0;
   ShowBox:Boolean = false;
   LocalStorageCartArray:any = []
