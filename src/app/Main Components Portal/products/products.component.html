@@ -1,37 +1,50 @@
 <div class="container mt-5">
-    <h1 class="text-center" id="mt-title">Available Products</h1>
+    <h1 style="font-family: oswald;" class="text-center mb-3" id="mt-title">Available Watches</h1>
     <div class="row">
       <div id="card-color" class="col col-lg-4 my-5" *ngFor="let _Data of MyDataArray; let i=index">
         <div class="card" style="width: 18rem;">
           <img [src]="_Data.Image[0]" alt="">
         
           <div class="card-body">
-            <h5 class="card-title">{{_Data.Name}}</h5>
-            <h6 class="card-text">{{_Data.price}}</h6>
-            <p class="card-text">{{_Data.description}}</p>
+            <h5 id="style-font" style="font-family: oswald;" class="text-weight-bold">{{_Data.Name}}</h5>
+            <h6 style="font-family: oswald;" class="card-text">{{_Data.price}}</h6>
+            <p style="font-family: oswald;" class="card-text">{{_Data.description}}</p>
+            <p style="font-family: oswald;" class="text-danger">{{_Data.offer}}</p>
             <!-- <p id="qty-color" style="color: rgb(29, 29, 29);" class="card-text">{{_Data.qty}}</p> -->
             <span *ngIf="_Data.qty !== 0">
               <!-- <i id="check-icon" class="fas fa-check"></i> -->
-              <h4 id="i-stock" class="succes">{{_Data.qty !== 0 ? 'In Stock':''}}</h4>
+              <h4 id="i-stock" >{{_Data.qty !== 0 ? 'Available':''}}</h4>
             </span>
 
             <span *ngIf="_Data.qty === 0">
               <!-- <i id="cross-icon" class="fas fa-times"></i> -->
-              <h4 id="o-stock" class="danger">
-              {{_Data.qty === 0 ? 'Out Of Stock':''}}
+              <h4 id="o-stock" >
+              {{_Data.qty === 0 ? 'Sold Out':''}}
             </h4>
           </span>
 
-            <button type="button" class="btn btn-outline-success w-100" (click)="GoToViewProduct(_Data._id)"
-             [ngClass]="_Data.qty === 0 ? 'btn-outline-danger': 'btn-outline-success'" [disabled]="_Data.qty === 0"
+            <button type="button" class="btn w-100" (click)="GoToViewProduct(_Data._id)"
+             [ngClass]="_Data.qty === 0 ? '': ''" [disabled]="_Data.qty === 0"
              >
-              {{_Data.qty ===0 ? 'Out of Stock' : 'Add To Cart'}}
+              {{_Data.qty ===0 ? 'Sold Out' : 'Add to Cart'}}
             </button>
           </div>
         </div>
       </div>
     </div>
 </div>
+
+<style>
+.btn{
+  background-color: rgba(0, 0, 0, 0.897);
+  color: rgb(236, 236, 236);
+  padding-left: 6px;
+  padding-right: 6px;
+  font-family: oswald;
+  /* margin-left: px; */
+  /* margin-right: 11px; */
+}
+</style>
 
 
 

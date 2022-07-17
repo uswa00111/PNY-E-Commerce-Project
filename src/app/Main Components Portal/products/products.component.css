@@ -21,10 +21,12 @@ img{
 #i-stock{
     color: rgb(10, 10, 10) !important;
     font-size: large;
+    font-family: oswald;
 }
 #o-stock{
     color: grey !important;
     font-size: large;
+    font-family: oswald;
 }
 
 #check-icon{

@@ -7,8 +7,9 @@
       "https://images.firstpost.com/fpimages/1200x800/fixed/jpg/2018/11/OnePlus-7-1280.jpg.jpg"
     ],
     "description":"Best Watch in History",
-    "qty":"42",
+    "qty":"18",
     "price":"$100.000",
+    "offer":"Limited Stock!",
     "NewQuantity":0
   },
   {
@@ -19,8 +20,8 @@
       "https://www.apple.com/v/watch/aw/images/meta/gps-lte/og__n5qzveqr596m.png?202206031759"
     ],
     "description":"Best Old Money Trendy",
-    "qty":"33",
-    "price":"$94k",
+    "qty":"20",
+    "price":"$9845.00",
     "NewQTY":0
   },
   {
@@ -32,11 +33,11 @@
     ],
     "description":"Best Selling Watch",
     "qty":0,
-    "price":"$72k",
+    "price":"$7125.00",
     "NewQuantity":0
   },
   {
-    "_id":4,
+    "_id":55,
     "Name":"Vacheron Constantin",
     "Image":[
       "https://images.lifestyleasia.com/wp-content/uploads/2019/02/20182947/Twin-Beat-HERO.jpg",
@@ -44,7 +45,7 @@
     ],
     "description":"Best Selling",
     "qty":0,
-    "price":"$54k",
+    "price":"$545.00",
     "NewQuantity":0
   },
   {
@@ -55,8 +56,8 @@
       "https://m.media-amazon.com/images/I/51Ivn8kOaPL._AC_SS450_.jpg"
     ],
     "description":"Best Selling",
-    "qty":"",
-    "price":"$22K",
+    "qty":"4",
+    "price":"$2025.00",
     "NewQuantity":0
   },
   {
@@ -67,8 +68,8 @@
       "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-og-202104?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1618674417000"
     ],
     "description":"Best Selling",
-    "qty":"33",
-    "price":"$34K",
+    "qty":"",
+    "price":"$346.00",
     "NewQuantity":0
   }
 ]

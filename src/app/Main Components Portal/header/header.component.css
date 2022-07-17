@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+ }
+
+ .page-header {
+    background-color: #242582;
+    padding: 1.3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .navbar-new-top{
     background: rgb(82, 85, 85);
     background-image: url(./2500206.webp);
@@ -6,17 +18,20 @@
     
 }
 .navbar-brand{
-    font-weight: 600;
+    font-weight: 650px;
 }
 #account{
     font-size: 15px;
+    font-family: oswald;
     
 }
 #blvck{
     color: rgb(3, 3, 3) !important;
-    font-family:Verdana;
+    font-family:oswald;
     font-size: 17px;
     margin-left: 9px;
+    word-spacing: 3.5px;
+    letter-spacing: 4px;
     
 }
 .navbar-brand img{
@@ -144,4 +159,16 @@
   transform: translateX(-50%) translateY(-100%);
   opacity: 1;
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+
+
+
+
+#toggle-menu {
+    display: none;
+}
+
+#toggle-menu:checked ~ .nav-bar {
+    display: block;
 }

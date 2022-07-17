@@ -7,13 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  CartIncrement:any = 0;
-  constructor() { }
 
   ngOnInit(): void {
   }
 
-  IncrementCartValue(){
-    this.CartIncrement++;
-  }
 }
