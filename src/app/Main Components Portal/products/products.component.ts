@@ -32,7 +32,7 @@ export class ProductsComponent implements OnInit {
   GoToViewProduct(Id:any){
 
     this._NonVolatileService.SetDataToLocalStorage(Id);
-    this._MessengerService.sendMsgToObserver({Id:Id,NewProduct:'yes'});
+    this._MessengerService.sendMsgToObserver(Id);
     this._Router.navigate(['view-cart']);
   }
 }
