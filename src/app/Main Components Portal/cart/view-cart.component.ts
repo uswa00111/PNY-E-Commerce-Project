@@ -65,7 +65,7 @@ export class ViewCartComponent implements OnInit {
     this.ShowBox = true;
     let CartObjectPlus = this._NonVolatileService.GetProdcutToLocalStorage();
     if (this.SelectedQuantity >= this.ProductQuantity) {
-      this._ToastrService.error('Quantiyy cannot Exceed that Original Quanityt');
+      this._ToastrService.error('Not Available Above This Quantity!');
       return
     }
 
