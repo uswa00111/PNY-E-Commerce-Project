@@ -35,7 +35,6 @@ export class ViewCartComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    //Yahan say meray pass data aa rahay hai with the help of 
     this._MessengerService.GetMessageWithData().subscribe(
       (DataComingFromMyMessengerService: any) => {
         this.Data = DataComingFromMyMessengerService;
