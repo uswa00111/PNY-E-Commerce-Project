@@ -26,7 +26,7 @@ export class ProductsComponent implements OnInit {
   }
 
   bringDataFromServiceToPCForMyComponent(){
-    this.MyDataArray = this._DataService.bringDataFromServiceToPC();
+    this.MyDataArray = this._DataService.GetData();
   }
 
   GoToViewProduct(Id:any){
