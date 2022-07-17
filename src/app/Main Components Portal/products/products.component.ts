@@ -12,7 +12,6 @@ import { NonVolatileService } from 'src/app/Service Portal/Services/non-volatile
 })
 export class ProductsComponent implements OnInit {
 
-  MyName="Hello Wolrd"
   MyDataArray:any = [];
 
   constructor(

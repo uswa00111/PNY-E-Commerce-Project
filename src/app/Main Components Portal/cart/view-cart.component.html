@@ -23,7 +23,8 @@
 <div class="container" id="cart-controller-blow">
     <h1>Name: {{FilteredArray[0].Name}}</h1>
     <h3>Quantity: {{FilteredArray[0].qty}}</h3>
-    <p>Description: {{FilteredArray[0].Description}}</p>
+    <p>Description: {{FilteredArray[0].description}}</p>
+    <p>Price: {{FilteredArray[0].price}}</p>
     <img *ngFor="let _Data of FilteredArray[0].Image" [src]="_Data" alt="">
     <!-- <p>{{_Data}}</p> -->
     <p></p>
