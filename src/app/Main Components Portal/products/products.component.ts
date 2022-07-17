@@ -22,17 +22,17 @@ export class ProductsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.bringDataFromServiceToPCForMyComponent();
+    this.GetDataForMyComponent();
   }
 
-  bringDataFromServiceToPCForMyComponent(){
+  GetDataForMyComponent(){
     this.MyDataArray = this._DataService.GetData();
   }
 
-  GoToViewProduct(Id:any){
+  GoToViewProduct(_Id:any){
 
-    this._NonVolatileService.SetDataToLocalStorage(Id);
-    this._MessengerService.sendMsgToObserver(Id);
+    this._NonVolatileService.SetDataToLocalStorage(_Id);
+    this._MessengerService.SendMessageWithData(_Id);
     this._Router.navigate(['view-cart']);
   }
 }

@@ -6,16 +6,13 @@ import { ReplaySubject } from 'rxjs';
 })
 export class MessengerService {
 
-   subjectRequestsSubscription = new ReplaySubject(1);
-  
+  _Subject = new ReplaySubject(1);
   constructor() { }
 
-  sendMsgToObserver(notificationForSubs:any){
-    this. subjectRequestsSubscription.next(notificationForSubs);
+  SendMessageWithData(MessageAndData:Boolean){
+    this._Subject.next(MessageAndData);
   }
-  
   GetMessageWithData(){
-      return this. subjectRequestsSubscription.asObservable();
+    return this._Subject.asObservable();
   }
-
 }
