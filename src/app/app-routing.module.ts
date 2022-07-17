@@ -14,6 +14,8 @@ import { UserSignUpComponent } from './Management Portal/UserManagement/user-sig
 import { HomeComponent } from './Main Components Portal/home/home.component';
 import { GallaryComponent } from './gallary/gallary.component';
 import { FaqComponent } from './faq/faq.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+
 
 const routes: Routes = [
   { path:'', component:HomeComponent},
@@ -27,6 +29,8 @@ const routes: Routes = [
   { path:'child', component:ChildComponent },
   {path:'gallary', component:GallaryComponent},
   {path:'faq', component:FaqComponent},
+  {path:'contact-us', component:ContactUsComponent},
+  
   
 
   {

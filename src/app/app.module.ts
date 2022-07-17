@@ -25,6 +25,7 @@ import { HomeComponent } from './Main Components Portal/home/home.component';
 import { FooterComponent } from './Main Components Portal/footer/footer.component';
 import { FaqComponent } from './faq/faq.component';
 import { GallaryComponent } from './gallary/gallary.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 
@@ -44,7 +45,8 @@ import { GallaryComponent } from './gallary/gallary.component';
     HomeComponent,
     FooterComponent,
     FaqComponent,
-    GallaryComponent
+    GallaryComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
