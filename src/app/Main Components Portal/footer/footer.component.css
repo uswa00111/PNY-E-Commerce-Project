@@ -1,6 +1,11 @@
 /*footer*/
-.col_white_amrc { color:rgb(129, 129, 129);}
-footer { width:100%; background-color:#000000d5; min-height:250px; padding:10px 0px 25px 0px ;}
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.col_white_amrc { color:rgba(129, 129, 129, 0.959);}
+footer { width:100%; background-color:#000000e7; min-height:250px; padding:10px 0px 25px 0px ;}
 .pt2 { padding-top:40px ; margin-bottom:20px ;}
 footer p { font-size:13px; color:rgb(112, 112, 112); padding-bottom:0px; margin-bottom:8px;}
 .mb10 { padding-bottom:15px ;}
@@ -31,5 +36,5 @@ footer p { font-size:13px; color:rgb(112, 112, 112); padding-bottom:0px; margin-
 
 .social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
 .social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
-.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
+.social_footer_ul li a { color:rgb(156, 156, 156); border:1px solid rgb(156, 156, 156); padding:8px;border-radius:50%;}
 .social_footer_ul li i {  width:20px; height:20px; text-align:center;}
