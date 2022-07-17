@@ -41,7 +41,7 @@ export class ViewCartComponent implements OnInit {
       }
     )
     this.GetDataFromMyService();
-    this.LocalStorageCartArray = this._NonVolatileService.GetProdcutToLocalStorage();
+    this.LocalStorageCartArray = this._NonVolatileService.GetProductToLocalStorage();
     if(Object.entries(this.LocalStorageCartArray).length !== 0){
       this.ShowBox = true;
     }
@@ -62,7 +62,7 @@ export class ViewCartComponent implements OnInit {
 
   AddQuantity() {
     this.ShowBox = true;
-    let CartObjectPlus = this._NonVolatileService.GetProdcutToLocalStorage();
+    let CartObjectPlus = this._NonVolatileService.GetProductToLocalStorage();
     if (this.SelectedQuantity >= this.ProductQuantity) {
       this._ToastrService.error('Not Available Above This Quantity!');
       return
@@ -70,9 +70,9 @@ export class ViewCartComponent implements OnInit {
 
     if(Object.entries(CartObjectPlus).length === 0){ 
       this.CartArray.push(this.FilteredArray[0]);
-      this._NonVolatileService.AddProdcutToLocalStorage(this.CartArray);
+      this._NonVolatileService.AddProductToLocalStorage(this.CartArray);
       this.Data = undefined;
-      this.LocalStorageCartArray = this._NonVolatileService.GetProdcutToLocalStorage();
+      this.LocalStorageCartArray = this._NonVolatileService.GetProductToLocalStorage();
       return
     }
 
@@ -81,9 +81,9 @@ export class ViewCartComponent implements OnInit {
       CartObjectPlus.forEach((element:any) => {
         this.NewCartArray.push(element);
       });
-      this._NonVolatileService.AddProdcutToLocalStorage(this.NewCartArray);
+      this._NonVolatileService.AddProductToLocalStorage(this.NewCartArray);
       this.Data = undefined;
-      this.LocalStorageCartArray = this._NonVolatileService.GetProdcutToLocalStorage();
+      this.LocalStorageCartArray = this._NonVolatileService.GetProductToLocalStorage();
       return
     }
 
@@ -93,14 +93,14 @@ export class ViewCartComponent implements OnInit {
           this.SelectedQuantity++; 
         }
        });
-       this._NonVolatileService.AddProdcutToLocalStorage(CartObjectPlus);
+       this._NonVolatileService.AddProductToLocalStorage(CartObjectPlus);
        this._NonVolatileService.SetUserMiscellaneousInformation(this.CartQuantity);
-       this.LocalStorageCartArray = this._NonVolatileService.GetProdcutToLocalStorage();
+       this.LocalStorageCartArray = this._NonVolatileService.GetProductToLocalStorage();
   }
 
   SubQuantity() {
 
-    let CartObjectPlus = this._NonVolatileService.GetProdcutToLocalStorage();
+    let CartObjectPlus = this._NonVolatileService.GetProductToLocalStorage();
     if (this.SelectedQuantity <= 0) {
       return
     }
@@ -111,7 +111,7 @@ export class ViewCartComponent implements OnInit {
         this.SelectedQuantity--;
       }
      });
-     this._NonVolatileService.AddProdcutToLocalStorage(CartObjectPlus);
+     this._NonVolatileService.AddProductToLocalStorage(CartObjectPlus);
      this._NonVolatileService.SetUserMiscellaneousInformation(this.CartQuantity);
   }
 }
