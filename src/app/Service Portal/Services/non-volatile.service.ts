@@ -11,8 +11,12 @@ export class NonVolatileService {
     localStorage.setItem('product-id',JSON.stringify(Id));
   }
 
-  bringDataFromServiceToPCFromLocalStorgae(){
-    return JSON.parse(localStorage.getItem('product-id') || '{}');
+  //  bringDataFromServiceToPCFromMyService(){
+  //  return JSON.parse(localStorage.getItem('product-id') || '{}');
+  //  }
+
+   GetDataFromLocalStorage(): any{
+     return JSON.parse(localStorage.getItem('product-id') || '{}') //here its returning the saved data from local storage
   }
 
   AddProdcutToLocalStorage(Data:any){

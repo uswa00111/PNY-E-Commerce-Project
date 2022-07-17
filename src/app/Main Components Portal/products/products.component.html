@@ -11,23 +11,14 @@
             <p style="font-family: oswald;" class="card-text">{{_Data.description}}</p>
             <p style="font-family: oswald;" class="text-danger">{{_Data.offer}}</p>
             <!-- <p id="qty-color" style="color: rgb(29, 29, 29);" class="card-text">{{_Data.qty}}</p> -->
-            <span *ngIf="_Data.qty !== 0">
-              <!-- <i id="check-icon" class="fas fa-check"></i> -->
-              <h4 id="i-stock" >{{_Data.qty !== 0 ? 'Available':''}}</h4>
-            </span>
-
-            <span *ngIf="_Data.qty === 0">
-              <!-- <i id="cross-icon" class="fas fa-times"></i> -->
-              <h4 id="o-stock" >
-              {{_Data.qty === 0 ? 'Sold Out':''}}
-            </h4>
-          </span>
-
-            <button type="button" class="btn w-100" (click)="GoToViewProduct(_Data._id)"
-             [ngClass]="_Data.qty === 0 ? '': ''" [disabled]="_Data.qty === 0"
-             >
-              {{_Data.qty ===0 ? 'Sold Out' : 'Add to Cart'}}
-            </button>
+           
+            <span *ngIf="_Data.QYT !==0">
+              <i class="fa-solid fa-check text-primary"></i></span>
+          <h4>{{_Data.QYT !==0 ? 'In Stock':''}}</h4>
+          <span *ngIf="_Data.QYT === 0">
+              <i class="fa-solid fa-xmark text-danger"></i></span>
+          <h4 class="text-danger">{{_Data.QYT ===0 ? 'Out Of Stock':''}}</h4>
+          <button type="button"  (click)="GoToViewProduct(_Data._id)" [disabled]="_Data.QYT === 0" class="btn btn-outline-success w-100">Add to Cart</button>
           </div>
         </div>
       </div>

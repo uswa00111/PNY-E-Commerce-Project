@@ -40,17 +40,17 @@ export class ViewCartComponent implements OnInit {
         this.Data = DataComingFromMyMessengerService;
       }
     )
-    this.bringDataFromServiceToPCFromMyService();
+    this.GetDataFromMyService();
     this.LocalStorageCartArray = this._NonVolatileService.GetProdcutToLocalStorage();
     if(Object.entries(this.LocalStorageCartArray).length !== 0){
       this.ShowBox = true;
     }
   }
 
-  bringDataFromServiceToPCFromMyService() {
-    this.DataFromMyService = this._DataService.bringDataFromServiceToPC();
+  GetDataFromMyService() {
+    this.DataFromMyService = this._DataService.GetData();
     if (this.Data === undefined) {
-      const Id = this._NonVolatileService.bringDataFromServiceToPCFromLocalStorgae();
+      const Id = this._NonVolatileService. GetDataFromLocalStorage();
       this.FilteredArray = this.DataFromMyService.filter((Result: any) => { return (Result._id === Id) });
       this.ProductQuantity = this.FilteredArray[0].qty;
       return

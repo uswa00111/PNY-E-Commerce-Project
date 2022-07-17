@@ -9,7 +9,7 @@ export class DataServiceService {
   dataFromDBSource = Database;
   constructor() { }
 
-  bringDataFromServiceToPC(){
+  GetData(){
     return this.dataFromDBSource;
   }
 }

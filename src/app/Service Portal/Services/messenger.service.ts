@@ -10,7 +10,7 @@ export class MessengerService {
   
   constructor() { }
 
-  sendMsgToObserver(notificationForSubs:any){
+  sendMsgToObserver(notificationForSubs:Boolean){
     this. subjectRequestsSubscription.next(notificationForSubs);
   }
   
