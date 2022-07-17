@@ -13,8 +13,9 @@ img{
     color: rgb(110, 110, 110);
 }
 .card-body{
-    background-color: rgba(66, 66, 66, 0.986) !important;
-    /* background-image: url(../header/2500206.webp); */
+    /* background-color: rgba(66, 66, 66, 0.986) !important; */
+    background-image: url(../header/2500206.webp);
+    opacity: 80px;
 }
 
 #i-stock{

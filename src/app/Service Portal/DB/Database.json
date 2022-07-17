@@ -6,8 +6,9 @@
       "https://www.itl.cat/pngfile/big/6-61413_directory-photo-watch-rolex-gmt-2.jpg",
       "https://images.firstpost.com/fpimages/1200x800/fixed/jpg/2018/11/OnePlus-7-1280.jpg.jpg"
     ],
-    "description":"Best Watch in History.",
+    "description":"Best Watch in History",
     "qty":"42",
+    "price":"$100.000",
     "NewQuantity":0
   },
   {
@@ -17,8 +18,9 @@
       "https://cdn.shopify.com/s/files/1/1468/9008/collections/Custom_Design_Diamond_Bezel_Dial_Watches_New_York_NYC_WatchGuyNYC_Rolex_Patek_Audemars_002_7a839eb8-c671-48fd-9bb2-2455caa1ca82.jpg?v=1493837641",
       "https://www.apple.com/v/watch/aw/images/meta/gps-lte/og__n5qzveqr596m.png?202206031759"
     ],
-    "description":"Keep your Phone sync to keep you updated.",
+    "description":"Best Old Money Trendy",
     "qty":"33",
+    "price":"$94k",
     "NewQTY":0
   },
   {
@@ -28,8 +30,9 @@
       "https://images.unsplash.com/photo-1605583972719-30bd2ca0705a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2FzaW8lMjB3YXRjaHxlbnwwfHwwfHw%3D&w=1000&q=80",
       "https://techcrunch.com/wp-content/uploads/2020/03/Apple_new-macbook-air-wallpaper-screen_03182020.jpg"
     ],
-    "description":"Get The New MacBook Air with 10% New Year Discount.",
+    "description":"Best Selling Watch",
     "qty":0,
+    "price":"$72k",
     "NewQuantity":0
   },
   {
@@ -39,8 +42,9 @@
       "https://images.lifestyleasia.com/wp-content/uploads/2019/02/20182947/Twin-Beat-HERO.jpg",
       "https://images.macrumors.com/t/FVj-PVAevX8aMyFUgDa8dgtIDOg=/1600x1200/smart/article-new/2021/11/vissles-lp85-keyboard6.jpg"
     ],
-    "description":"New Thin & Smooth Keyboards.",
+    "description":"Best Selling",
     "qty":0,
+    "price":"$54k",
     "NewQuantity":0
   },
   {
@@ -50,8 +54,9 @@
       "https://wallpaperaccess.com/full/1978253.jpg",
       "https://m.media-amazon.com/images/I/51Ivn8kOaPL._AC_SS450_.jpg"
     ],
-    "description":"Pencil for Smart-Art.",
+    "description":"Best Selling",
     "qty":"",
+    "price":"$22K",
     "NewQuantity":0
   },
   {
@@ -61,8 +66,9 @@
       "https://wallpaperaccess.com/full/2041536.jpg",
       "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-og-202104?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1618674417000"
     ],
-    "description":"Boost your workflow with new Pads.",
+    "description":"Best Selling",
     "qty":"33",
+    "price":"$34K",
     "NewQuantity":0
   }
 ]

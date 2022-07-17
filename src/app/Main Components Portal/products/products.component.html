@@ -7,15 +7,16 @@
         
           <div class="card-body">
             <h5 class="card-title">{{_Data.Name}}</h5>
-            <p class="card-text">{{_Data.Description}}</p>
-            <p class="text-info">{{_Data.qty}}</p>
+            <h6 class="card-text">{{_Data.price}}</h6>
+            <p class="card-text">{{_Data.description}}</p>
+            <!-- <p id="qty-color" style="color: rgb(29, 29, 29);" class="card-text">{{_Data.qty}}</p> -->
             <span *ngIf="_Data.qty !== 0">
-              <i id="check-icon" class="fas fa-check"></i>
+              <!-- <i id="check-icon" class="fas fa-check"></i> -->
               <h4 id="i-stock" class="succes">{{_Data.qty !== 0 ? 'In Stock':''}}</h4>
             </span>
 
             <span *ngIf="_Data.qty === 0">
-              <i id="cross-icon" class="fas fa-times"></i>
+              <!-- <i id="cross-icon" class="fas fa-times"></i> -->
               <h4 id="o-stock" class="danger">
               {{_Data.qty === 0 ? 'Out Of Stock':''}}
             </h4>
