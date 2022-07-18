@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { isEmpty } from 'rxjs';
-import { DataServiceService } from 'src/app/Service Portal/Services/data-service.service';
-import { MessengerService } from 'src/app/Service Portal/Services/messenger.service';
-import { NonVolatileService } from 'src/app/Service Portal/Services/non-volatile.service';
+import { DataServiceService } from 'src/app/ServicePortal/Services/data-service.service';
+import { MessengerService } from 'src/app/ServicePortal/Services/messenger.service';
+import { NonVolatileService } from 'src/app/ServicePortal/Services/non-volatile.service';
 import { HeaderComponent } from '../header/header.component';
 
 @Component({

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '../../Service Portal/Models/UserModel';
+import { User } from '../../ServicePortal/Models/UserModel';
 
 @Component({
   selector: 'app-angular-concepts',

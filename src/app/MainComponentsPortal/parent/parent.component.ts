@@ -1,4 +1,4 @@
-import { Product } from '../../Service Portal/Models/HumanBeing';
+import { Product } from '../../ServicePortal/Models/HumanBeing';
 import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-parent',
